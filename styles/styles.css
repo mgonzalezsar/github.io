@@ -53,3 +53,33 @@ body {
 .navbar-toggler:focus {
     box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.4);
 }
+
+main {
+    padding-top: 110px;
+}
+
+/* Ajustes móviles */
+@media (max-width: 576px) {
+    .navbar-custom {
+        padding: 0.4rem 0;
+        border-radius: 0;           /* si quieres que en móvil sea recta */
+    }
+
+    .navbar-brand img {
+        max-height: 32px;          /* logo más pequeño en móvil */
+        height: auto;
+        width: auto;
+    }
+
+    .navbar-nav {
+        align-items: center;       /* centra los enlaces en el menú desplegado */
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.35rem 0.75rem;
+    }
+
+    main {
+        padding-top: 90px;         /* algo menos en pantallas pequeñas */
+    }
+}
