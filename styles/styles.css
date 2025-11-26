@@ -1,12 +1,12 @@
 :root {
-    --color-bg-dark: #D3D3D3;
-    --color-primary: #D4AF37;       /* dorado */
-    --color-primary-hover: #0a0a0a; /* gris claro para hover */
+    --color-bg-dark: #e0e0e0;
+    --color-primary: #000000;       /* dorado */
+    --color-primary-hover: #D4AF37; /* gris claro para hover */
 }
 
 /* Fondo oscuro y texto claro para que se vea */
 body {
-    background-color: var(--color-bg-dark);
+    background-color:#f5f5f5f5;
     color: #f5f5f5;  /* texto claro en todo el body */
 }
 
@@ -36,7 +36,7 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-    color: var(--color-primary) !important; /* dorado al pasar el ratón */
+    color: var(--color-primary-hover) !important; /* dorado al pasar el ratón */
 }
 
 
@@ -54,8 +54,18 @@ body {
     box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.4);
 }
 
+.btn-custom-primary {
+    color: var(--color-primary)
+
+}
+
+.btn-custom-primary:hover {
+    color: var(--color-primary-hover)
+
+}
+
 main {
-    padding-top: 110px;
+     padding-top: 200px;
 }
 
 /* Ajustes móviles */
